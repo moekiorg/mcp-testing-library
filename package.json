@@ -21,8 +21,7 @@
     "cli": "node ./src/bin/cli.js",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
-    "format": "prettier --write \"**/*.{ts,js,json,md}\"",
-    "postinstall": "npm run build"
+    "format": "prettier --write \"**/*.{ts,js,json,md}\""
   },
   "author": "",
   "license": "MIT",
