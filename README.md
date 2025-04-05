@@ -15,42 +15,10 @@ A CLI tool for running Model Context Protocol (MCP) tests.
 
 ## Installation
 
-### Global Installation
-
-You can install the package globally:
-
-```bash
-npm install -g mcpt
-```
-
-Or use it directly with npx:
-
-```bash
-npx mcpt
-```
-
-### Local Installation
-
 To install as a development dependency in your project:
 
 ```bash
-npm install --save-dev mcpt
-```
-
-### Development Setup
-
-To contribute to the project:
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/mcpt.git
-cd mcpt
-
-# Install dependencies
-npm install
-
-# Build the project
-npm run build
+npm install --save-dev mcp-testing-library
 ```
 
 ## Usage
@@ -107,7 +75,7 @@ mcpt --exclude "**/node_modules/**,**/dist/**,**/build/**"
 You can also use the MCP test utilities directly in your code:
 
 ```typescript
-import { mcpt, expect } from 'mcpt';
+import { mcpt, expect } from 'mcp-testing-library';
 
 // Test a filesystem MCP server
 mcpt(
