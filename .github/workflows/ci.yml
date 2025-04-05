@@ -17,7 +17,7 @@ jobs:
         uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e
         with:
           node-version: '18'
-          cache: 'npm'
+          cache: package-lock.json
 
       - name: Install dependencies
         run: npm ci
