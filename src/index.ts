@@ -15,9 +15,9 @@ export interface mcptOptions {
   /** Command to run (e.g., 'npx') */
   command: string;
   /** Arguments for the command */
-  args: string[];
+  args?: string[];
   /** Environment variables */
-  env: Record<string, string> | undefined;
+  env?: Record<string, string>;
 }
 
 /**
