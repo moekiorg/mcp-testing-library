@@ -1,6 +1,6 @@
 {
   "name": "mcp-testing-library",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A CLI tool for running Model Context Protocol (MCP) tests",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
