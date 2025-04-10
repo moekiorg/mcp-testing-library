@@ -16,6 +16,8 @@ export interface mcptOptions {
   command: string;
   /** Arguments for the command */
   args: string[];
+  /** Environment variables */
+  env: Record<string, string> | undefined;
 }
 
 /**
@@ -42,12 +44,12 @@ export type mcptCallback = (context: {
  * @returns A promise that resolves when the test is complete
  */
 export const mcpt = async (
-  { command, args }: mcptOptions,
+  { command, args, env }: mcptOptions,
   callback: mcptCallback
 ): Promise<void> => {
   console.log(`🚀 Starting mcpt with command: ${command}`);
 
-  const transport = new StdioClientTransport({ command, args });
+  const transport = new StdioClientTransport({ command, args, env });
 
   const client = new Client(
     {

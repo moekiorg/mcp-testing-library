@@ -4,6 +4,9 @@ mcpt(
   {
     command: 'npx',
     args: ['-y', '@modelcontextprotocol/server-filesystem', '/Users/kawakami/Documents/notes'],
+    env: {
+      FOO: 'BAR',
+    },
   },
   async ({ tools, isMethodExist }) => {
     expect(tools.length).to.eq(11);
